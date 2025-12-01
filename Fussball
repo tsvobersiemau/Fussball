@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSV Obersiemau</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background: #8B0000; /* dunkles Rot */
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #8B0000;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .button {
+      display: inline-block;
+      background: #8B0000;
+      color: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button:hover {
+      background: #B22222; /* etwas helleres Rot */
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TSV Obersiemau</h1>
+    <p>Gemeinsam stark – auf und neben dem Platz!</p>
+  </header>
+
+  <section id="about">
+    <h2>Über uns</h2>
+    <p>
+      Der TSV Obersiemau ist ein leidenschaftlicher Verein mit starkem Zusammenhalt, 
+      engagierten Spielern und treuen Fans. Unser Sportplatz in Obersiemau ist das Herzstück 
+      unseres Vereinslebens – hier wird trainiert, gespielt und gefeiert.
+    </p>
+  </section>
+
+  <section id="training">
+    <h2>Trainingszeiten</h2>
+    <p>Unser Training findet immer am <strong>Donnerstag um 18:30 Uhr</strong> am Sportplatz in Obersiemau statt.</p>
+  </section>
+
+  <section id="instagram">
+    <h2>Aktuelles vom TSV Obersiemau</h2>
+    <p>Folge uns auf Instagram, um keine Neuigkeiten zu verpassen!</p>
+
+    <!-- Instagram Feed Einbettung (SociableKIT) -->
+    <div class='sk-instagram-feed' data-embed-id='25621402'></div>
+    <script src='https://widgets.sociablekit.com/instagram-feed/widget.js' defer></script>
+
+    <p style="font-size:0.9rem; text-align:center;">
+      👉 <a href="https://instagram.com/tsv_obersiemau" target="_blank">@tsv_obersiemau auf Instagram ansehen</a>
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Bei Fragen oder Interesse melde dich gern per E-Mail, per Instagram Direktnachricht oder komm einfach vorbei.:</p>
+    <a class="button" href="mailto:tsvobersiemau@gmail.com">E-Mail senden</a>
+  </section>
+
+  <section id="location">
+    <h2>Unser Sportplatz</h2>
+    <iframe 
+      src="https://www.google.com/maps?q=Sportplatzweg+4,+96253+Untersiemau&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      height="450">
+    </iframe>
+  </section>
+
+  <footer>
+    © <span id="year"></span> TSV Obersiemau 1945 e.V. · Alle Rechte vorbehalten
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
